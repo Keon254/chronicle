@@ -1,3 +1,145 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 24 14% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 24 14% 11%;
+    --muted: 38 24% 93%;
+    --muted-foreground: 28 8% 38%;
+    --border: 34 18% 86%;
+    --primary: 4 72% 42%;
+    --primary-foreground: 40 33% 98%;
+    --accent: 24 14% 11%;
+    --accent-foreground: 40 33% 98%;
+    --ring: 4 72% 42%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  ::selection {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+}
+
+@layer components {
+  /* Rich text article body styling */
+  .article-body {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.25rem;
+    line-height: 1.75;
+    color: hsl(var(--foreground));
+  }
+  .article-body p {
+    margin-bottom: 1.5rem;
+  }
+  .article-body h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  .article-body h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .article-body a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .article-body ul,
+  .article-body ol {
+    margin: 0 0 1.5rem 1.5rem;
+  }
+  .article-body ul {
+    list-style: disc;
+  }
+  .article-body ol {
+    list-style: decimal;
+  }
+  .article-body li {
+    margin-bottom: 0.5rem;
+  }
+  .article-body blockquote {
+    border-left: 3px solid hsl(var(--primary));
+    padding-left: 1.25rem;
+    margin: 0 0 1.5rem 0;
+    font-style: italic;
+    color: hsl(var(--muted-foreground));
+  }
+  .article-body strong {
+    font-weight: 600;
+  }
+
+  /* Editor surface */
+  .tiptap {
+    outline: none;
+    min-height: 320px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+  .tiptap p {
+    margin-bottom: 1rem;
+  }
+  .tiptap h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.75rem;
+  }
+  .tiptap h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.25rem 0 0.5rem;
+  }
+  .tiptap ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .tiptap ol {
+    list-style: decimal;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .tiptap blockquote {
+    border-left: 3px solid hsl(var(--primary));
+    padding-left: 1rem;
+    font-style: italic;
+    color: hsl(var(--muted-foreground));
+    margin-bottom: 1rem;
+  }
+  .tiptap a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+  }
+  .tiptap p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    color: hsl(var(--muted-foreground));
+    pointer-events: none;
+    height: 0;
+  }
+}

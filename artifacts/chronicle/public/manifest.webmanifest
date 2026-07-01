@@ -1,0 +1,16 @@
+{
+  "name": "CHRONICLE",
+  "short_name": "Chronicle",
+  "description": "A premium digital newsroom for fast, credible, beautiful reporting.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f4ee",
+  "theme_color": "#b68d40",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

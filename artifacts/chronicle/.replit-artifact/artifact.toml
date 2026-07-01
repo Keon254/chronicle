@@ -1,6 +1,6 @@
 kind = "web"
 previewPath = "/"
-title = "Chronicle"
+title = "CHRONICLE - Global News Platform"
 version = "1.0.0"
 id = "artifacts/chronicle"
 router = "path"

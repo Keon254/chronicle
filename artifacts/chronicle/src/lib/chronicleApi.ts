@@ -77,6 +77,24 @@ export async function subscribeNewsletter(email: string) {
   return api ?? { ok: true };
 }
 
+const bookmarksKey = "chronicle-bookmarks";
+
+export function getBookmarks(): string[] {
+  try {
+    return JSON.parse(localStorage.getItem(bookmarksKey) || "[]") as string[];
+  } catch {
+    return [];
+  }
+}
+
+export function toggleBookmark(id: string): boolean {
+  const current = getBookmarks();
+  const isBookmarked = current.includes(id);
+  const next = isBookmarked ? current.filter((b) => b !== id) : [...current, id];
+  localStorage.setItem(bookmarksKey, JSON.stringify(next));
+  return !isBookmarked;
+}
+
 export function trackRecentSearch(query: string) {
   const clean = query.trim();
   if (!clean) return;

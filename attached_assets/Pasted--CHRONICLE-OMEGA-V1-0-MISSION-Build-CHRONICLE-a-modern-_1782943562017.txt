@@ -1,0 +1,592 @@
+# CHRONICLE OMEGA V1.0
+
+## MISSION
+
+Build **CHRONICLE**, a modern, production-ready global news platform using **only HTML, CSS, and Vanilla JavaScript**.
+
+Do **NOT** use:
+
+* React
+* Next.js
+* Vue
+* Angular
+* Svelte
+* Bootstrap
+* Tailwind
+* jQuery
+
+The website must feel as polished and professional as BBC, CNN, Reuters, or The Verge while remaining a pure HTML/CSS/JavaScript project.
+
+---
+
+# TECH STACK
+
+Frontend:
+
+* HTML5
+* CSS3
+* Vanilla JavaScript (ES2022)
+
+Backend:
+
+* Supabase
+
+Use Supabase for:
+
+* Database
+* Authentication
+* Storage
+* Realtime updates
+
+---
+
+# DESIGN
+
+Create a premium news experience.
+
+Requirements:
+
+* Fully responsive
+* Mobile-first
+* Fast loading
+* Clean animations
+* Glassmorphism where appropriate
+* Smooth transitions
+* Dark mode
+* Light mode
+* Professional typography
+* Accessible colors
+* SEO-friendly HTML
+* Lazy loading
+* Modern cards
+* Beautiful hero section
+
+No placeholder styling.
+
+Everything should look production-ready.
+
+---
+
+# PAGES
+
+Create:
+
+Home
+
+Latest News
+
+Trending
+
+Categories
+
+World
+
+Politics
+
+Technology
+
+Business
+
+Science
+
+Health
+
+Entertainment
+
+Sports
+
+Gaming
+
+Anime
+
+Opinion
+
+Search
+
+Bookmarks
+
+Article Page
+
+Author Page
+
+About
+
+Contact
+
+Privacy Policy
+
+Terms
+
+404
+
+Admin Dashboard
+
+---
+
+# HOME PAGE
+
+Include:
+
+Breaking News ticker
+
+Hero featured article
+
+Trending section
+
+Latest News
+
+Popular Articles
+
+Editor's Picks
+
+Category previews
+
+Featured videos
+
+Newsletter signup
+
+Recommended articles
+
+Footer
+
+---
+
+# ARTICLE PAGE
+
+Include:
+
+Hero image
+
+Headline
+
+Subtitle
+
+Author
+
+Publish date
+
+Updated date
+
+Reading time
+
+Category
+
+Tags
+
+Share buttons
+
+Like button
+
+Bookmark button
+
+Comments
+
+Related articles
+
+Next article
+
+Previous article
+
+Reading progress bar
+
+Back to top button
+
+Image gallery
+
+Embedded videos
+
+---
+
+# SEARCH
+
+Real-time search
+
+Category filter
+
+Tag filter
+
+Sort by:
+
+Newest
+
+Oldest
+
+Most Popular
+
+Most Viewed
+
+Alphabetical
+
+---
+
+# COMMENTS
+
+Nested replies
+
+Like comments
+
+Report comments
+
+Delete (admin)
+
+Edit (author)
+
+Realtime updates
+
+---
+
+# BOOKMARKS
+
+Save article
+
+Remove bookmark
+
+Bookmark counter
+
+Persistent using Supabase
+
+---
+
+# USER EXPERIENCE
+
+Infinite scrolling
+
+Skeleton loading
+
+Lazy loaded images
+
+Smooth page transitions
+
+Toast notifications
+
+Responsive navigation
+
+Keyboard shortcuts
+
+Offline support
+
+Progressive Web App
+
+---
+
+# ADMIN DASHBOARD
+
+Secure admin login.
+
+Only authenticated admins may access.
+
+Dashboard should include:
+
+Statistics
+
+Total Articles
+
+Total Views
+
+Total Categories
+
+Total Authors
+
+Drafts
+
+Published
+
+Scheduled
+
+Comments
+
+Reports
+
+Analytics
+
+---
+
+# ARTICLE MANAGEMENT
+
+Create article
+
+Edit article
+
+Delete article
+
+Save draft
+
+Schedule publishing
+
+Publish immediately
+
+Upload images
+
+Upload videos
+
+Rich text editor
+
+Markdown support
+
+Preview article
+
+SEO metadata
+
+Slug generator
+
+Featured article toggle
+
+Breaking news toggle
+
+Trending toggle
+
+---
+
+# CATEGORY MANAGEMENT
+
+Create category
+
+Edit category
+
+Delete category
+
+Icon
+
+Color
+
+Description
+
+Order
+
+Visibility
+
+---
+
+# MEDIA LIBRARY
+
+Upload
+
+Delete
+
+Rename
+
+Folders
+
+Search
+
+Preview
+
+Storage usage
+
+---
+
+# ANALYTICS
+
+Views
+
+Unique visitors
+
+Popular articles
+
+Traffic sources
+
+Reading time
+
+Daily statistics
+
+Weekly statistics
+
+Monthly statistics
+
+Top categories
+
+Top authors
+
+---
+
+# SECURITY
+
+Use Supabase Authentication.
+
+Only admins may:
+
+Create articles
+
+Edit articles
+
+Delete articles
+
+Manage categories
+
+Manage comments
+
+Manage media
+
+Manage settings
+
+Protect every admin route.
+
+Never expose service-role keys.
+
+Use Row Level Security (RLS).
+
+Validate all inputs.
+
+Escape HTML to prevent XSS.
+
+Use parameterized queries where applicable.
+
+---
+
+# DATABASE
+
+Design a scalable Supabase schema.
+
+Tables should include:
+
+admins
+
+articles
+
+categories
+
+authors
+
+comments
+
+tags
+
+article_tags
+
+bookmarks
+
+likes
+
+views
+
+notifications
+
+media
+
+settings
+
+Create indexes where needed.
+
+Enable RLS.
+
+---
+
+# PERFORMANCE
+
+Optimize everything.
+
+Minify assets
+
+Compress images
+
+Lazy loading
+
+Efficient DOM updates
+
+Avoid duplicate requests
+
+Use caching
+
+Reduce layout shifts
+
+---
+
+# FILE STRUCTURE
+
+chronicle/
+
+index.html
+
+article.html
+
+category.html
+
+search.html
+
+about.html
+
+contact.html
+
+admin.html
+
+404.html
+
+assets/
+
+css/
+
+style.css
+
+responsive.css
+
+dark.css
+
+admin.css
+
+animations.css
+
+js/
+
+app.js
+
+supabase.js
+
+auth.js
+
+admin.js
+
+articles.js
+
+comments.js
+
+bookmarks.js
+
+search.js
+
+categories.js
+
+notifications.js
+
+theme.js
+
+utils.js
+
+storage.js
+
+assets/
+
+images/
+
+icons/
+
+fonts/
+
+supabase/
+
+---
+
+# CODE QUALITY
+
+Use modern ES2022 JavaScript.
+
+Separate concerns.
+
+No duplicated code.
+
+Write reusable functions.
+
+Use async/await.
+
+Use modules.
+
+Comment complex logic only.
+
+Keep the project organized and maintainable.
+
+---
+
+# FINAL GOAL
+
+Build a complete, production-quality news platform that is ready to deploy to Netlify with Supabase as the backend.
+
+The finished project should feel like a commercial news website rather than a beginner project, with excellent performance, clean architecture, polished UI, strong security, and room to scale.

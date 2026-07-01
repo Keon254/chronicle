@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml
+Sitemap: https://keon254.github.io/chronicle/sitemap.xml
+Sitemap: https://keon254.github.io/chronicle/news-sitemap.xml

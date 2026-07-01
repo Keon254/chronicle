@@ -91,7 +91,7 @@ function App() {
   }, [theme]);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
       <Shell theme={theme} setTheme={setTheme} />
     </BrowserRouter>
   );

@@ -1,0 +1,333 @@
+You are now the Lead DevOps Engineer, Senior Frontend Engineer, SEO Architect, and GitHub Pages deployment specialist.
+
+The website must be deployed primarily on GitHub Pages.
+
+GitHub Pages compatibility is the highest priority.
+
+CURRENT ISSUE
+
+The website returns:
+
+404
+File not found
+
+at:
+
+https://keon254.github.io/chronicle/
+
+Fix every issue automatically.
+
+================================================
+
+DEPLOYMENT REQUIREMENTS
+
+Determine whether this project is:
+
+• Vite
+• React
+• Next.js
+• Astro
+• Static HTML
+
+Configure the project correctly for GitHub Pages.
+
+================================================
+
+IF USING VITE
+
+Update vite.config.js
+
+Set:
+
+base: "/chronicle/"
+
+Generate the correct build.
+
+Output to:
+
+dist/
+
+================================================
+
+IF USING REACT
+
+Ensure routing works correctly.
+
+Use BrowserRouter with GitHub Pages support OR HashRouter if necessary.
+
+Prevent refresh 404 errors.
+
+================================================
+
+PACKAGE.JSON
+
+Automatically configure:
+
+homepage
+
+predeploy
+
+deploy
+
+Correct build scripts
+
+GitHub Pages deployment support
+
+================================================
+
+404 FIXES
+
+Create proper:
+
+404.html
+
+index.html
+
+Redirect logic for SPA
+
+Ensure GitHub Pages always loads the application correctly.
+
+================================================
+
+GITHUB ACTIONS
+
+Create a complete GitHub Actions workflow.
+
+Location:
+
+.github/workflows/deploy.yml
+
+Requirements:
+
+Build automatically
+
+Deploy automatically
+
+Every push to main redeploys the website.
+
+No manual deployment required.
+
+================================================
+
+PROJECT STRUCTURE
+
+Verify:
+
+public/
+
+assets/
+
+images/
+
+fonts/
+
+robots.txt
+
+sitemap.xml
+
+manifest.webmanifest
+
+favicon
+
+Everything must work correctly on GitHub Pages.
+
+================================================
+
+SEO
+
+Achieve Lighthouse SEO score above 98.
+
+Automatically implement:
+
+✔ Title tags
+✔ Meta descriptions
+✔ Canonical URLs
+✔ Open Graph
+✔ Twitter Cards
+✔ robots.txt
+✔ sitemap.xml
+✔ JSON-LD Schema
+✔ Article Schema
+✔ NewsArticle Schema
+✔ Breadcrumb Schema
+✔ Organization Schema
+✔ WebSite Schema
+✔ SearchAction Schema
+
+================================================
+
+PERFORMANCE
+
+Target:
+
+Performance 100
+
+Accessibility 100
+
+Best Practices 100
+
+SEO 100
+
+Implement:
+
+Image optimization
+
+Code splitting
+
+Tree shaking
+
+Lazy loading
+
+Compression
+
+Font optimization
+
+Caching
+
+Prefetching
+
+Preloading
+
+================================================
+
+PWA
+
+Create:
+
+manifest.webmanifest
+
+Offline support
+
+Installable app
+
+Splash screen
+
+App icons
+
+Theme colors
+
+================================================
+
+NEWS SEO
+
+Optimize for Google News.
+
+Generate:
+
+News sitemap
+
+Article metadata
+
+Publication dates
+
+Modified dates
+
+Author schema
+
+Category schema
+
+Headline schema
+
+Featured images
+
+================================================
+
+SOCIAL SHARING
+
+Every article must have:
+
+Open Graph image
+
+Twitter image
+
+Facebook preview
+
+LinkedIn preview
+
+Discord preview
+
+================================================
+
+URL STRUCTURE
+
+Create SEO-friendly URLs.
+
+Example:
+
+/technology/apple-launches-new-ai-chip
+
+NOT
+
+/article?id=123
+
+================================================
+
+SEARCH
+
+Generate:
+
+robots.txt
+
+sitemap.xml
+
+news-sitemap.xml
+
+Automatically update them when new articles are published.
+
+================================================
+
+SECURITY
+
+Add:
+
+Content Security Policy
+
+Security headers
+
+XSS protection
+
+Safe asset loading
+
+================================================
+
+ACCESSIBILITY
+
+Achieve WCAG AA compliance.
+
+Keyboard navigation
+
+ARIA labels
+
+Screen reader support
+
+================================================
+
+BUILD VALIDATION
+
+Before finishing, verify:
+
+✔ No broken links
+✔ No missing assets
+✔ No console errors
+✔ No 404 errors
+✔ No missing images
+✔ No missing favicon
+✔ No hydration issues
+✔ No deployment issues
+✔ GitHub Pages compatibility confirmed
+
+================================================
+
+FINAL GOAL
+
+The website must deploy successfully to:
+
+https://keon254.github.io/chronicle/
+
+with zero manual fixes.
+
+GitHub Pages is the primary deployment target.
+
+Every future push to the main branch should automatically rebuild and redeploy the website.
+
+Do not stop until every deployment issue has been resolved and the website is production-ready.

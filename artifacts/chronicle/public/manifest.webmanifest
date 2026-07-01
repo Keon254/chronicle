@@ -2,15 +2,27 @@
   "name": "CHRONICLE",
   "short_name": "Chronicle",
   "description": "A premium digital newsroom for fast, credible, beautiful reporting.",
-  "start_url": "/",
+  "start_url": "/chronicle/",
+  "scope": "/chronicle/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#f7f4ee",
   "theme_color": "#b68d40",
+  "categories": ["news"],
+  "lang": "en-US",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/chronicle/favicon.svg",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Search",
+      "url": "/chronicle/search",
+      "description": "Search articles"
     }
   ]
 }
